@@ -10,7 +10,7 @@
 
 3. Install the Docker "Stable channel" (if you are already using an older version of Docker and run into installation issues downstream, try updating to the latest version of Docker)
 
-For Mac OS - https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
+Docker For Mac OS - https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
 
 Click on the "Get Docker for Mac (Stable)" button as pictured below.
 
