@@ -1,7 +1,4 @@
 # Installation Guides
-If you already have an updated Anaconda distribution, simply clone the workshop repository in your prefered directory, cd into the cloned directory, and type jupyter notebook to get started.
-
-If you DO NOT have an updated Anaconda distribution installed on your local machine or would prefer to use anaconda with Docker, use the following installation guides to get started.
 
 If you haven't used Docker before, a good place to start is the [Docker User Guide](https://docs.docker.com/userguide/).
 
