@@ -14,11 +14,17 @@ Docker For Mac OS - https://docs.docker.com/docker-for-mac/install/#download-doc
 
 Click on the "Get Docker for Mac (Stable)" button as pictured below.
 
-![Docker Stable](/imgs/docker-stable.png)
+![Docker Stable](./imgs/docker-stable.png)
 
 Docker is a system to build self contained versions of a Linux operating system running on your machine. When you install and run TensorFlow via Docker it completely isolates the installation from pre-existing packages on your machine.
 
 4. Start Docker, e.g., using spotlight search (by pressing the cmd + space bar) or Finder to navigate to your Applications folder and double-clicking on the Docker icon
+
+5. Open your terminal and run the Docker hello-world image to ensure Docker is working properly
+
+```
+docker run hello-world
+```
 
 ## Pull Docker Image
 
