@@ -8,13 +8,21 @@
 	* Type `cd ~` into the command-line prompt and 
 	* *Execute* the line by pressing the **return** key on your keyboard
 
-3. Install the Docker "Stable channel" (if you are already using an older version of Docker and run into installation issues downstream, try updating to the latest version of Docker)
+3. Install the Docker Community Edition "Stable channel" (if you are already using an older version of Docker and run into installation issues downstream, try updating to the latest version of Docker)
 
-Docker For Mac OS - https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
+Docker For **Mac OS X El Capitan 10.11 or newer macOS** release running on a **2010 or newer Mac** - https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
 
 Click on the "Get Docker for Mac (Stable)" button as pictured below.
 
-![Docker Stable](./imgs/docker-stable.png)
+![Docker Stable](../imgs/docker-stable.png)
+
+**The legacy solution for older Mac systems is Docker Toolbox**
+
+https://docs.docker.com/toolbox/toolbox_install_mac/
+
+Click on the "Get Docker Toolbox for Mac" button. 
+
+Follow their instructions to install Docker and to make sure that virtualization is enabled on your machine.
 
 Docker is a system to build self contained versions of a Linux operating system running on your machine. When you install and run TensorFlow via Docker it completely isolates the installation from pre-existing packages on your machine.
 
