@@ -12,19 +12,19 @@ The following instructions will *not* use a Docker image, but rather enable you 
 
 ![Anaconda Installation](../imgs/anaconda-install.png)
 
-3. To make sure that everything is up to date, which is almost never the case, even with a fresh install, open the Anaconda Prompt, which will be found in the new Anaconda folder. Run `conda update conda` and then `conda update --all`. For both of these, when requested to proceed, enter "y". (Note: The 2nd command should include an update of conda, however, it's been noted that doing these in two steps can sometimes avoid some crashing.)
+3. To make sure that everything is up to date, which is almost never the case, even with a fresh install, open the Anaconda Prompt, which is an application that will be found in the new Anaconda folder. (Note: The Anaconda Prompt is just like the Command Prompt, however, it ensures that you are able to run Anaconda and Conda commands without have to change directory.) Run `conda update conda` and then `conda update --all`. For both of these, when requested to proceed, enter "y". (Note: The 2nd command should include an update of conda, however, it's been noted that doing these in two steps can sometimes avoid some crashing.)
 
 `conda list` will give you a list of everything installed along with the version numbers.
 
 ## Installing TensorFlow
 
-The [instructions](https://www.tensorflow.org/install/install_windows) for installing TensorFlow immediately point to two options: with CPU support only or with GPU support. The latter will give you better performance, but it's significantly more complicated and will require installing a lot of NVIDIA stuff, some of which requires approval for a NVIDIA developer account. That may take days, so let's go with CPU support only. (Note: If you'd like to try to install with GPU support you should go for it because it is awesome. Once all the NVIDIA stuff is in place, you'll have to make once small change below, which is `pip install --ignore-installed --upgrade tensorflow-gpu`.)
+The [instructions](https://www.tensorflow.org/install/install_windows) for installing TensorFlow immediately point to two options: with CPU support only or with GPU support. The latter will give you better performance, but it's significantly more complicated and will require installing a lot of NVIDIA stuff, some of which requires approval for a NVIDIA developer account. That may take days, so let's go with CPU support only. (Note: If you'd like to try to install with GPU support you should go for it because it is awesome. Once all the NVIDIA stuff is in place, you'll have to make one small change below, which is `pip install --ignore-installed --upgrade tensorflow-gpu`. You can always come back and do this later, too.)
 
 1. Create a Conda environment named "tensorflow" by running `conda create -n tensorflow` in the Anaconda Prompt. Reply "y" at the prompt asking to proceed. (Note: This will, by default, include the version of Python installed.)
 
 2. Activate the environment by running `activate tensorflow`. (Note: Your prompt should change to something like `(tensorflow) C:>`.)
 
-3. To install the CPU only version of TensorFlow into the environment, run `pip install --ignore-installed --upgrade tensorflow`.
+3. To install the CPU only version of TensorFlow into the environment, run `pip install --ignore-installed --upgrade tensorflow`. (Note: If you run `conda list` and see that "tensorflow" is already there, then it came preinstalled with your Anaconda. Reinstalling it won't hurt, but this step might be superfluous.)
 
 If you get a pop-up windows that says, "Missing shortcut: Windows is searching for python.exe," you can click the button to tell Windows where to find it (saving you a ton of time) and then navigate to `C:\Users\{your-user-name}\Anaconda3`. python.exe should be in there.
 
