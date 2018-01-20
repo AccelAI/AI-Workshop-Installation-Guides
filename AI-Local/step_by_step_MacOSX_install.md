@@ -16,24 +16,24 @@
 
 4. Press **Enter** to read the license agreement. Use **Space** to continue to the next page.
 
-```Welcome to Anaconda2 4.4.0 (by Continuum Analytics, Inc.)```
+```Welcome to Anaconda2 4.4.0 (by Continuum Analytics, Inc.)
 
-```In order to continue the installation process, please review the license agreement. Please, press ENTER to continue```
+In order to continue the installation process, please review the license agreement. Please, press ENTER to continue```
 
 5. Type **yes** to accept the license terms.
 
-```Do you approve the license terms? [yes|no]```
-```[no] >>> yes```
+```Do you approve the license terms? [yes|no]
+[no] >>> yes```
 
 6. Press **Enter** to install Anaconda to the default location.
 
-```Anaconda will now be installed into this location:```
-```/Users/username/anaconda2```
+```Anaconda will now be installed into this location:
+/Users/username/anaconda2
 
-```- Press ENTER to confirm the location```
-```- Press CTRL-C to abort the installation```
-```- Or specify an different location below```
-```[/Users/username/anaconda2] >>>```
+- Press ENTER to confirm the location
+- Press CTRL-C to abort the installation
+- Or specify an different location below
+[/Users/username/anaconda2] >>>```
 
 8. Type **yes** to have Anaconda update your PATH.
 
