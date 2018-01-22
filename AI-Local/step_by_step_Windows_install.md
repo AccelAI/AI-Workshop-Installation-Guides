@@ -16,7 +16,7 @@ The following instructions will *not* use a Docker image, but rather enable you 
 
 `conda list` will give you a list of everything installed along with the version numbers.
 
-## Installing TensorFlow
+## Setting up Anaconda Environment and Installing TensorFlow
 
 The [instructions](https://www.tensorflow.org/install/install_windows) for installing TensorFlow immediately point to two options: with CPU support only or with GPU support. The latter will give you better performance, but it's significantly more complicated and will require installing a lot of NVIDIA stuff, some of which requires approval for a NVIDIA developer account. That may take days, so let's go with CPU support only. (Note: If you'd like to try to install with GPU support you should go for it because it is awesome. Once all the NVIDIA stuff is in place, you'll have to make one small change below, which is `pip install --ignore-installed --upgrade tensorflow-gpu`. You can always come back and do this later, too.)
 
@@ -52,3 +52,21 @@ print(sess.run(hello))
 'Hello, TensorFlow!'
 ```
 (Note: If you get a warning of the type `C:\Users\Mark\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from 'float' to 'np.floating' is deprecated. In future, it will be treated as 'np.float64 == np.dtype(float).type'. from ._conv import register_converters as _register_converters` you may ignore that.)
+
+## Cloning the Repository
+
+Congratulations on making it this far! You've installed everything you need for deep learning with TensorFlow and you're Anaconda environment is set up and working. Your next step is to clone the AccelAI Github repository to your local machine. Since these instructions are *not* using Docker, or any other virtual machine, we'll be cloning the Github repository to a local directory.
+
+1. Inside the Anaconda Prompt, navigate to the directory where you wish to clone the repository, like `C:\Users\Mark\Documents\GitHub`. (Note: `cd /` will take you to the home directory, `cd ..` will take you up one leverl, `dir` will list all of the files and folders in your current directory and `cd` followed by the folder name will take you into the directory. `cd c:\Users\Mark\Documents\GitHub` will take you directly to that directory, assuming the path is correct. You'll probably have to replace `Mark` with your own user name.)
+
+2. Once you're in the desired directory, enter `git clone https://github.com/AccelAI/Image-Classification-TensorFlow.git`. The repository is almost 500MB so it might take a few minutes to clone.
+
+## Open the Lab Instructions
+
+1. Switch into the directory where you have cloned the Github repository. If you'll followed the instructions above, `cd Image-Classification-TensorFlow` will probably get you then.
+
+2. Inside the Anaconda Prompt, if you're not in your TensorFlow environment (the prompt will start with something like `(tensorflow) c:\...`), enter `activate tensorflow`. (Note: See above if you have questions.)
+
+3. Enter `jupyter notebook` to launch the Jupyter notebook, which should automatically open a tab in your default browser. (Note: If it seems like you're not in the directory where you're supposed to be, close the tab and terminate Jupyter notebook in the Anaconda Prompt by typing Ctrl-C twice. Enter `jupyter notebook --generate-config` in the Anaconda Prompt and selected "y" when prompted. Try `jupyter notebook` again and it should work.)
+
+4. In your browser, click "notebooks" and then "TensorFlow_for_Poets_Codelab.ipynb". This should open a new tab where you'll continue to follow the instructions.
