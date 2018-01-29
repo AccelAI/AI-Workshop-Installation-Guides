@@ -12,7 +12,7 @@ The following instructions will *not* use a Docker image, but rather enable you 
 
 ![Anaconda Installation](../imgs/anaconda-install.png)
 
-3. To make sure that everything is up to date, which is almost never the case, even with a fresh install, open the Anaconda Prompt, which is an application that will be found in the new Anaconda folder. (Note: The Anaconda Prompt is just like the Command Prompt, however, it ensures that you are able to run Anaconda and Conda commands without have to change directory.) Run `conda update conda` and then `conda update --all`. For both of these, when requested to proceed, enter "y". (Note: The 2nd command should include an update of conda, however, it's been noted that doing these in two steps can sometimes avoid some crashing.)
+3. To make sure that everything is up to date, which is almost never the case, even with a fresh install, open the Anaconda Prompt, which is an application that will be found in the new Anaconda folder. (Note: The Anaconda Prompt is just like the Command Prompt, however, it ensures that you are able to run Anaconda and Conda commands without having to change directory.) Run `conda update conda` and then `conda update --all`. For both of these, when requested to proceed, enter "y". (Note: The 2nd command should include an update of conda, however, it's been noted that doing these in two steps can sometimes avoid some crashing.)
 
 `conda list` will give you a list of everything installed along with the version numbers.
 
@@ -53,6 +53,7 @@ print(sess.run(hello))
 ```
 (Note: If you get a warning of the type `C:\Users\Mark\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from 'float' to 'np.floating' is deprecated. In future, it will be treated as 'np.float64 == np.dtype(float).type'. from ._conv import register_converters as _register_converters` you may ignore that.)
 
+
 ## Cloning the Repository
 
 Congratulations on making it this far! You've installed everything you need for deep learning with TensorFlow and you're Anaconda environment is set up and working. Your next step is to clone the AccelAI Github repository to your local machine. Since these instructions are *not* using Docker, or any other virtual machine, we'll be cloning the Github repository to a local directory.
@@ -70,3 +71,4 @@ Congratulations on making it this far! You've installed everything you need for 
 3. Enter `jupyter notebook` to launch the Jupyter notebook, which should automatically open a tab in your default browser. (Note: If it seems like you're not in the directory where you're supposed to be, close the tab and terminate Jupyter notebook in the Anaconda Prompt by typing Ctrl-C twice. Enter `jupyter notebook --generate-config` in the Anaconda Prompt and selected "y" when prompted. Try `jupyter notebook` again and it should work.)
 
 4. In your browser, click "notebooks" and then "TensorFlow_for_Poets_Codelab.ipynb". This should open a new tab where you'll continue to follow the instructions.
+
